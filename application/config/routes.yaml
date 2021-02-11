@@ -1,0 +1,14 @@
+api_v1_user_create:
+  path: /api/v1/users
+  controller: App\Infrastructure\Controller\Api\V1\UserController::handlerCreate
+  methods: [POST]
+
+api_v1_user_update:
+  path: /api/v1/users/{id}
+  controller: App\Infrastructure\Controller\Api\V1\UserController::handlerUpdate
+  methods: [PUT]
+
+api_v1_user_get:
+  path: /api/v1/users/{id}
+  controller: App\Infrastructure\Controller\Api\V1\UserController::handlerGet
+  methods: [GET]
